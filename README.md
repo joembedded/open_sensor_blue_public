@@ -1,5 +1,5 @@
-# MARDER #
-** Profi Marderscheuche (Hochspannung, Ultraschall, Ultra-Low-Power) mit BluetoothLE **
+# OpenSensorBlue #
+** OpenSensor Solution with BluetoothLE **
 
 Es gibt...
 

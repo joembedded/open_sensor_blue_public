@@ -36,7 +36,8 @@
 #include "intmem.h"
 
 // ---Globals---
-
+// Diese Variable (und der ADV-Name) wird im NVMemory gespeichert.
+uint16_t mode_flags=15;  // Per Default: Halb An, Halb aus, das ist immer der Standard-Modus
 
 // Systemdaten OSX von Disk laden/initialisieren
 void system_init(void) {
@@ -58,8 +59,10 @@ void device_init(void) {
   // Hier evtl. IRQs init
 
   // - Setup lesen 
-  // Try to read Parameters
+  // Try to read GLOBAL Parameters
+  intpar_mem_read(ID_INTMEM_MODEFLAGS,sizeof(mode_flags) , (void*)&mode_flags); 
 
+  // Try to read Type Specific Parameters
   sensor_init(); // ID etc..
 
 }
@@ -91,6 +94,18 @@ int16_t device_cmdline(uint8_t isrc, uint8_t *pc, uint32_t val) {
   case 'e': // Measure
     sensor_measure(isrc); // Sensor messen
     break;
+
+  case 'f': // 'f': Mode-Flags setzen - Variable im NVMEMORY
+    pc++;
+    if(*pc) { // With Parameter: SET
+      mode_flags = val;
+      intpar_mem_write(ID_INTMEM_MODEFLAGS,sizeof(mode_flags) , (void*)&mode_flags); // return: Anzahl Bytes used in intmem, ignored
+
+    }
+    sprintf(uni_line, "Mode-Flags: %u\n", mode_flags); 
+    type_cmdprint_line(isrc, uni_line);
+    break;
+
 
 #ifdef ENABLE_BLE
   case 'n': // Name

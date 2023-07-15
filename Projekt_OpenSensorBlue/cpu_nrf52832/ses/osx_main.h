@@ -28,11 +28,14 @@ void system_init(void);
 void type_cmdprint_line(uint8_t isrc, char *pc);
 
 // === Parameter ===
+#define ID_INTMEM_MODEFLAGS 98 // Unterhalb 100: Systemparameter
 #define ID_INTMEM_ADVNAME 99 // Unterhalb 100: Systemparameter
 #define ID_INTMEM_USER0 100 // Ab hier freu fuer Sensor
 
 
 //=== in xxxx_sensor_xxx.c: ===
+extern uint16_t mode_flags; // Fuer schnelles Setup per 'f', Init mit 15 nach Reset
+
 void sensor_init(void);
 int16_t sensor_measure(uint8_t isrc);
 int16_t sensor_ble_v_data(char *pc); // Neu 2/23

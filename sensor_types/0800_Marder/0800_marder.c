@@ -239,7 +239,7 @@ bool device_periodic(void) { // Ret: true: Zeige stat '.*o'.., sonst nix
       return true; // Batterie schwach oder 'komisch', Betrieb einstellen
 
     // ---HighVoltage Service---
-    if (now_runtime > next_hvgen) {
+    if ((now_runtime > next_hvgen) && (mode_flags&1)) {
       if (hvolt < VLIM_REFRESH) { // Nachladen noetig
         float jpc = JPC_X1 * vbat + JPC_X0;
         float denergy = (((VLIM_MAX * VLIM_MAX) - (hvolt * hvolt)) * KAPH); // Soviel Energy wird benoetigt
@@ -264,7 +264,7 @@ bool device_periodic(void) { // Ret: true: Zeige stat '.*o'.., sonst nix
     }
     
     // ---Ultrasonic Service---
-    if (now_runtime > next_usonic) {
+    if ((now_runtime > next_usonic)  && (mode_flags&2)) {
 #if DEBUG
       play_sound_wait(PLID_USONIC_SIM, 1);  // Hoerbar und leise
 #else
@@ -319,7 +319,10 @@ int16_t sensor_measure(uint8_t isrc) {
     type_cmdprint_line(isrc, uni_line);
     sprintf(uni_line, "~h:%u\n", 0); // Reset, Alarm, alter Alarm, Messwert, ..
     type_cmdprint_line(isrc, uni_line);
-  
+
+    sprintf(uni_line, "~H Mode: HighVoltage:%s, UltraSonic:%s\n",(mode_flags&1)?"On":"Off",(mode_flags&2)?"On":"Off");
+    type_cmdprint_line(isrc, uni_line);
+    
 
   return 0;
 }

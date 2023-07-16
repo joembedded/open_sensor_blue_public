@@ -39,11 +39,11 @@ Und natürlich auf die Bedienbarkeit per BLE: So lassen sich sehr einfach jederz
 # Technische Daten: #
 - konzipiert für den Einsatz 9 - 14 Volt (entweder aus Akkus oder KFZ-Bordnetz. Wichtig: ältere KFZ haben tw. Spannungsspitzen >14 Volt, siehe dazu HW-Doku!)
 - Stromverbrauch besteht aus Teilkomponenten:
- - 'nur' BLE, unconnected:  <20uA
- - 'nur' BLE, connected mit APP:  <50uA
+	- 'nur' BLE, unconnected: <20uA, 
+	- 'nur' BLE, connected mit APP: <50uA
  - Hochspannungs-Erzeugung bei guter Isolation: ca. 32uA
  - Hochspannungs-Erzeugung bei schlechter Isolation: bis zu 500uA
- - Bei Kurzschluss an am Hochspannungsausgang: (je nach HW-Aufbau): ca. 0.1 - 10 mA
+ - Bei Kurzschluss am Hochspannungsausgang: (je nach HW-Aufbau): ca. 0.1 - 10 mA
  - Erzeugung des periodischen Ultraschall-Signals (je nach Lautstärke, siehe HW-Doku): ca. 0.1 - 1.2 mA
  
  Im Regelbetrieb (und bei mässiger Lautstärke) bleibt das Gerät also deutlich unter 0.5mA, d.h. mit Standard-Akkus der Grösse '18650' und 3500mAh 

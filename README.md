@@ -26,7 +26,7 @@ kann mit Sicherheit sagen, dass klassische Tipps, wie Toiletten-Steine, Hundehaa
 Käuflich gibt es eine Menge 'Marder-Scheuchen', speziell für KFZ, aber oft sind die technischen Angaben nicht schlüssig oder die Geräte anscheinend auch wirkungslos
 oder eines hat nach Fehlfunktionen sogar die Batterie unseres Campers tiefentladen. Ich habe daher den 'Marderli' für den eigenen Einsatz entwickelt.
 
-Aus Erfahrung kann ich sagen, dass die Kombi-Geräte mit Hochspannung und Ultraschall aber anscheinend gut funktionieren:
+Aus Erfahrung kann ich sagen, dass die Kombi Hochspannung und Ultraschall aber anscheinend gut funktioniert:
 Das Tier bekommt einen (harmlosen!) elektrischen Schlag und lernt daraus, Plätze mit diesem charakteristischen Signal in Zukunft zu meiden.
 Für die Stärke des elektrischen Schlags reichen nach gängiger Meinung ca. 0.1 - 0.25 Joule aus, und Marder können bis >30kHz hören. 
 Daher liegt das Ultraschall-Signal im Bereich zwischen 18kHz und 26kHz und besteht aus 3 kurzen Tönen.

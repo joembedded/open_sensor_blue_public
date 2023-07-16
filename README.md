@@ -41,10 +41,10 @@ Und natürlich auf die Bedienbarkeit per BLE: So lassen sich sehr einfach jederz
 - Stromverbrauch besteht aus Teilkomponenten:
 	- 'nur' BLE, unconnected: <20uA, 
 	- 'nur' BLE, connected mit APP: <50uA
- - Hochspannungs-Erzeugung bei guter Isolation: ca. 32uA
- - Hochspannungs-Erzeugung bei schlechter Isolation: bis zu 500uA
- - Bei Kurzschluss am Hochspannungsausgang: (je nach HW-Aufbau): ca. 0.1 - 10 mA
- - Erzeugung des periodischen Ultraschall-Signals (je nach Lautstärke, siehe HW-Doku): ca. 0.1 - 1.2 mA
+	- Hochspannungs-Erzeugung bei guter Isolation: ca. 32uA
+	- Hochspannungs-Erzeugung bei schlechter Isolation: bis zu 500uA
+	- Bei Kurzschluss am Hochspannungsausgang: (je nach HW-Aufbau): ca. 0.1 - 10 mA
+	- Erzeugung des periodischen Ultraschall-Signals (je nach Lautstärke, siehe HW-Doku): ca. 0.1 - 1.2 mA
  
  Im Regelbetrieb (und bei mässiger Lautstärke) bleibt das Gerät also deutlich unter 0.5mA, d.h. mit Standard-Akkus der Grösse '18650' und 3500mAh 
  lassen sich, ohne Probleme und ohne die KFZ-Batterie zu benutzen mehr als 6 Monate überbrücken!

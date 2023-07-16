@@ -24,7 +24,7 @@ Das erste 'Produkt' ist eine absolut profesionellee Marder-Scheuche mit Hochspan
 Technischer Hintergrund: Wohnend am Feldrand gibt es hier öfters Schäden durch Marder, oft auch am KFZ. Ich habe schon einiges probiert und
 kann mit Sicherheit sagen, dass klassische Tipps, wie Toiletten-Steine, Hundehaar, Drahtgitter, etc. nichts nützen.
 Käuflich gibt es eine Menge 'Marder-Scheuchen', speziell für KFZ, aber oft sind die technischen Angaben nicht schlüssig oder die Geräte anscheinend auch wirkungslos
-oder eines hat nach Fehlfunktionen sogar die Batterie unseres Campers tiefentladen. Ich habe diese Gerät für den eigenen Einsatz entwickelt.
+oder eines hat nach Fehlfunktionen sogar die Batterie unseres Campers tiefentladen. Ich habe daher den 'Marderli' für den eigenen Einsatz entwickelt.
 
 Aus Erfahrung kann ich sagen, dass die Kombi-Geräte mit Hochspannung und Ultraschall aber anscheinend gut funktionieren:
 Das Tier bekommt einen (harmlosen!) elektrischen Schlag und lernt daraus, Plätze mit diesem charakteristischen Signal in Zukunft zu meiden.

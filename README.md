@@ -58,7 +58,9 @@ Link: [Zum Projekt...](./documentation/0800_marder/README.md)
 ---
 ## Tools ##
 
-BLE-API: [BLE API Live (im Repository)](https://joembedded.github.io/ltx_ble_demo/ble_api/index.html)
+BLX.JS live: [BLE API Live (im Repository)](https://joembedded.github.io/ltx_ble_demo/ble_api/index.html)
+
+BlueShell/BLX Downloads: [BlueShell/BLX.JS Home](https://joembedded.de/x3/blueshell)
 
 ---
 # Installation

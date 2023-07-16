@@ -30,8 +30,8 @@ Aus Erfahrung kann ich sagen, dass die Kombi Hochspannung und Ultraschall aber a
 Das Tier bekommt einen (harmlosen!) elektrischen Schlag und lernt daraus, Plätze mit diesem charakteristischen Signal in Zukunft zu meiden.
 Für die Stärke des elektrischen Schlags reichen nach gängiger Meinung ca. 0.1 - 0.25 Joule aus, und Marder können bis >30kHz hören. 
 Daher liegt das Ultraschall-Signal im Bereich zwischen 18kHz und 26kHz und besteht aus 3 kurzen Tönen.
-Das Signal wird alle paar Sekunden wiederholt und ist zwar unangenehm laut (ca. 100 dB), aber für Menschen kaum wahrnehmbar. 
-Wichtig: Auch nicht hörbare Geräusche können -bei Mensch und Tier- zu Gehörschäden führen!
+Das Signal wird alle paar Sekunden wiederholt und ist zwar unangenehm (aber noch nicht gesundheitsschädlich) laut (ca. 100 dB), aber für Menschen kaum wahrnehmbar.
+Wichtig: Auch nicht hörbare, extrem laute, dauerhafte Geräusche können -bei Mensch und Tier- zu Gehörschäden führen. Dies wurde bei der Entwicklung berücksichtigt.
 
 Besonderen Wert wurde beim 'Marderli' auf niederen Stromverbrauch gelegt, so dass das Gerät auch problemlos monatelang an Akkus betrieben werden kann und trotzdem volle Leistung bringt.
 Und natürlich auf die Bedienbarkeit per BLE: So lassen sich sehr einfach jederzeit die technischen Daten (z.B. Spannung, Auslösungen, Qualität der Hochspannungs-Isolation, ...) abfragen oder ändern (z.B. BLE Name oder das Setup).

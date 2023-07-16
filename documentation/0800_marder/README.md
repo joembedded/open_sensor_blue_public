@@ -1,7 +1,8 @@
 # 0800_Marderli #
-_Docu zum Projekt_
+_Docu for this project_
 
-Verzeichnis mit kompletter Doku.
-
+- [Schematics and PCB](./documentation/0800_marder/cad/)
+- [Images](./documentation/0800_marder/img/)
+- [Simulation(LT-Spice)/Data](./documentation/0800_marder/simulation/)
 
 ---

@@ -5,7 +5,7 @@ Ein Grossteil der Soft- und Hardware von Embedded Sensoren ist komplett uabhäng
 Speicherzugriff, Kommunikation mit dem Benutzer, teilweise die Peripherie, ... 
 Aus diesem Grund habe ich OpenSensorBlue entwickelt, ein OpenSource Framework für alle möglichen Arten von Sensoren, Datenloggern, Kleinsteuerungen, ... 
 
-BluetoothLE (BLE) ist viel bequemer als Kabel und inzwischen funktioniert BLE im Browser (Android, PC und mit Einschränkungen auch iOS) sehr zuverlässig und nicht einmal eine APP wird dazu benötigt!
+BluetoothLE (BLE) ist viel bequemer als Kabel und inzwischen funktioniert BLE im Browser-APP (Android, PC und mit Einschränkungen auch iOS) sehr zuverlässig und nicht einmal die Installation einer APP wird dazu benötigt!
 
 Die Software von OpenSensorBlue-Geräten kann von jedermann editiert, verändert, kompiliert und auf Hardware (vollständig dokumentiert) aufgespielt werden. Sämtliche benötigten
 Quellcodes sind hier enthalten. Inklusive einer Bibliothek für die Kommunikation per BLE. Für professionellen Einsatz verfügt diese auch
@@ -58,9 +58,9 @@ Link: [Zum Projekt...](./documentation/0800_marder/README.md)
 ---
 ## Tools ##
 
-BLX.JS live: [BLE API Live (im Repository)](https://joembedded.github.io/ltx_ble_demo/ble_api/index.html)
+Browser-APP 'BLX.JS': [BLE API Live (im Repository)](https://joembedded.github.io/ltx_ble_demo/ble_api/index.html)
 
-BlueShell/BLX Downloads: [BlueShell/BLX.JS Home](https://joembedded.de/x3/blueshell)
+BlueShell/BLX.JS Downloads: [BlueShell/BLX.JS Home](https://joembedded.de/x3/blueshell)
 
 ---
 # Installation

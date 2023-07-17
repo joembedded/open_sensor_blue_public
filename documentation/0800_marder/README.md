@@ -1,11 +1,11 @@
 # 0800_Marderli #
 _Docu for this project_
 
-!['Marderli intern'](./img/marderli_int.jpg) Marderli inside (Battery Version)
+!['Marderli intern'](./img/marderli_int.jpg) <br>Marderli inside (Battery Version)
 
-!['Marderli'](./img/marderli.jpg) Marderli (Battery Version)
+!['Marderli'](./img/marderli.jpg) Marderli <br>(Battery Version)
 
-![Browser-APP 'BLX.JS'](../img_allg/blx_js.png) Browser-APP
+![Browser-APP 'BLX.JS'](../img_allg/blx_js.png) <br>Browser-APP
 
 
 - [Schematics and PCB](./cad/) Production data

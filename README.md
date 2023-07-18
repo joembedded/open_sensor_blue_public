@@ -1,59 +1,60 @@
 # OpenSensorBlue #
 ** OpenSensor Solution with BluetoothLE **
 
-Ein Grossteil der Soft- und Hardware von Embedded Sensoren ist komplett uabhängig vom Endprodukt, beispielsweise das Power-Management,
-Speicherzugriff, Kommunikation mit dem Benutzer, teilweise die Peripherie, ... 
-Aus diesem Grund habe ich OpenSensorBlue entwickelt, ein OpenSource Framework für alle möglichen Arten von Sensoren, Datenloggern, Kleinsteuerungen, ... 
+[<b><font color="red">GERMAN VERSION</font></b>](./documentation/README_DE.md)
 
-BluetoothLE (BLE) ist viel bequemer als Kabel und inzwischen funktioniert BLE im Browser-APP (Android, PC und mit Einschränkungen auch iOS) sehr zuverlässig und nicht einmal die Installation einer APP wird dazu benötigt!
+A large part of the software and hardware of embedded sensors is completely independent on the end product, for example the power management,
+memory access, communication with the user, partly the peripherals, ... For this reason I have developed OpenSensorBlue, an open source framework for all kinds of sensors, data loggers, small controllers, ... 
 
-Die Software von OpenSensorBlue-Geräten kann von jedermann editiert, verändert, kompiliert und auf Hardware (vollständig dokumentiert) aufgespielt werden. Sämtliche benötigten
-Quellcodes sind hier enthalten. Inklusive einer Bibliothek für die Kommunikation per BLE. Für professionellen Einsatz verfügt diese auch
-auch über Sicherheitsmechanismen und Firmware-Over-the-Air-Updates (AES-verschlüsselt), aber für den Hobbygebrauch und während der Entwicklung ist dies eher lästig, 
-es geht hier wesentlich einfacher und schneller, die Software gleich direkt per JTAG aufzuspielen oder zu debuggen.
+BluetoothLE (BLE) is much more convenient than cables and meanwhile BLE works very reliably in the browser APP (Android, PC and with restrictions also iOS) and not even the installation of an APP is needed!
 
-Als Basis-CPU wird die NRF52832 eingesetzt, für die es eine Unzahl sehr preisgünstiger Module gibt. 
+The software of OpenSensorBlue devices can be edited, modified, compiled and installed on hardware (fully documented) by anyone. All required
+source codes are included here. Including a library for communication via BLE. For professional use, this also has also has security mechanisms and firmware over-the-air updates (AES encrypted), but for hobby use and during development this is rather annoying, 
+It is much easier and faster to install or debug the software directly via JTAG.
+
+The NRF52832 is used as the basic CPU, for which there are a large number of very inexpensive modules. 
 
 ---
-# Projekte #
+# Projects #
 
 ## 0800_Marderli ##
-Das erste 'Produkt' ist eine absolut profesionellee Marder-Scheuche mit Hochspannung und Ultraschall. 
+The first 'product' is an absolutely professional marten/rodent protection with high voltage and ultrasonic. 
+
 !['Marderli'](./documentation/0800_marder/img/marderli_all.jpg)
 
-Technischer Hintergrund: Wohnend am Feldrand gibt es hier öfters Schäden durch Marder, oft auch am KFZ. Ich habe schon einiges probiert und
-kann mit Sicherheit sagen, dass klassische Tipps, wie Toiletten-Steine, Hundehaar, Drahtgitter, etc. nichts nützen.
-Käuflich gibt es eine Menge 'Marder-Scheuchen', speziell für KFZ, aber oft sind die technischen Angaben nicht schlüssig oder die Geräte anscheinend auch wirkungslos
-oder eines hat nach Fehlfunktionen sogar die Batterie unseres Campers tiefentladen. Ich habe daher den 'Marderli' für den eigenen Einsatz entwickelt.
+Technical background: Living at the edge of a field, there is often damage caused by martens, often also to the car. I have already tried a few things and
+can say with certainty that classic tips such as toilet stones, dog hair, wire mesh, etc. are of no use.
+There are a lot of 'marten/rodent protection' devices available for sale, especially for cars, but often the technical specifications are inconclusive or the devices seem to be ineffective.
+or one of them has even ruined the battery of our camper by deep-discharge after malfunctioning. I have therefore developed the 'Marderli' for my own use.
 
-Aus Erfahrung kann ich sagen, dass die Kombi Hochspannung und Ultraschall aber anscheinend gut funktioniert:
-Das Tier bekommt einen (harmlosen!) elektrischen Schlag und lernt daraus, Plätze mit diesem charakteristischen Signal in Zukunft zu meiden.
-Für die Stärke des elektrischen Schlags reichen nach gängiger Meinung ca. 0.1 - 0.25 Joule aus, und Marder können bis >30kHz hören. 
-Daher liegt das Ultraschall-Signal im Bereich zwischen 18kHz und 26kHz und besteht aus 3 kurzen Tönen.
-Das Signal wird alle paar Sekunden wiederholt und ist zwar unangenehm (aber noch nicht gesundheitsschädlich) laut (ca. 100 dB), aber für Menschen kaum wahrnehmbar.
-Wichtig: Auch nicht hörbare, extrem laute, dauerhafte Geräusche können -bei Mensch und Tier- zu Gehörschäden führen. Dies wurde bei der Entwicklung berücksichtigt.
+From experience I can say that the combination of high voltage and ultrasonic seems to work well:
+The animal gets a (harmless!) electric shock and learns from it to avoid places with this characteristic signal in the future.
+According to common opinion, about 0.1 - 0.25 joules are sufficient for the strength of the electric shock, and martens can hear up to >30kHz. 
+Therefore, the ultrasonic signal is in the range between 18kHz and 26kHz and consists of 3 short tones.
+The signal is repeated every few seconds and is unpleasantly (but not yet harmful to health) loud (approx. 100 dB), but hardly perceptible to humans.
+Important: Even inaudible, extremely loud, continuous noises can cause hearing damage - in humans and animals. This was taken into account during development.
 
-Besonderen Wert wurde beim 'Marderli' auf niederen Stromverbrauch gelegt, so dass das Gerät auch problemlos monatelang an Akkus betrieben werden kann und trotzdem volle Leistung bringt.
-Und natürlich auf die Bedienbarkeit per BLE: So lassen sich sehr einfach jederzeit die technischen Daten (z.B. Spannung, Auslösungen, Qualität der Hochspannungs-Isolation, ...) abfragen oder ändern (z.B. BLE Name oder das Setup).
+Special emphasis was placed on low power consumption for the 'Marderli', so that the device can be operated for months on batteries without any problems and still provide full performance.
+And, of course, on the operability via BLE: Thus, the technical data (e.g. voltage, triggers, quality of the high-voltage insulation, ...) can be queried or changed (e.g. BLE name or the setup) very easily at any time.
 
-# Technische Daten: #
-- konzipiert für den Einsatz 9 - 14 Volt (entweder aus Akkus oder KFZ-Bordnetz. Wichtig: ältere KFZ haben tw. Spannungsspitzen >14 Volt, siehe dazu HW-Doku!)
-- Stromverbrauch besteht aus Teilkomponenten:
-	- 'nur' BLE, unconnected: <20uA, 
-	- 'nur' BLE, connected mit APP: <50uA
-	- Hochspannungs-Erzeugung bei guter Isolation: ca. 32uA
-	- Hochspannungs-Erzeugung bei schlechter Isolation: bis zu 500uA
-	- Bei Kurzschluss am Hochspannungsausgang: (je nach HW-Aufbau): ca. 0.1 - 10 mA
-	- Erzeugung des periodischen Ultraschall-Signals (je nach Lautstärke, siehe HW-Doku): ca. 0.1 - 1.2 mA
+# Technical data: #
+- Designed for use with 9 - 14 volts (either from batteries or vehicle electrical system. Important: older vehicles sometimes have voltage peaks >14 volts, see HW documentation).
+- Power consumption consists of subcomponents:
+	- BLE 'only', unconnected: <20uA, 
+	- BLE 'only', connected with APP: <50uA
+	- High-voltage generation with good insulation: approx. 32uA
+	- High-voltage generation with poor insulation: up to 500uA
+	- In case of short-circuit at the high-voltage output: (depending on the HW structure): approx. 0.1 - 10 mA
+	- Generation of the periodic ultrasonic signal (depending on volume, see HW documentation): approx. 0.1 - 1.2 mA
  
- Im Regelbetrieb (und bei mässiger Lautstärke) bleibt das Gerät also deutlich unter 0.5mA, d.h. mit Standard-Akkus der Grösse '18650' und 3500mAh 
- lassen sich, ohne Probleme und ohne die KFZ-Batterie zu benutzen mehr als 6 Monate überbrücken!
- Bei Spannungen <9V schaltet das Gerät Hochspannung und Ultraschall ab!
- 
- 
-Link: [Zum Projekt...](./documentation/0800_marder/README.md)
+ In normal operation (and at moderate volume), the device remains well below 0.5mA, i.e. with standard batteries of the size '18650' and 3500mAh 
+ you can bridge more than 6 months without problems and without using the car battery!
+ At voltages <9V, the unit switches off high voltage and ultrasonic!
 
-## ...weitere folgen.. ##
+ 
+Link: [Project...](./documentation/0800_marder/README.md)
+
+## ...more soon.. ##
 
 ---
 ## Tools ##

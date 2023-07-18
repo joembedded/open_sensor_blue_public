@@ -1,7 +1,7 @@
 # OpenSensorBlue #
 ** OpenSensor Solution with BluetoothLE **
 
-<b>Goto [ENGLISH VERSION...](./README.md)</b>...
+<b>Goto [ENGLISH VERSION...](./README.md)</b>
 
 Ein Grossteil der Soft- und Hardware von Embedded Sensoren ist komplett unabhängig vom Endprodukt, beispielsweise das Power-Management,
 Speicherzugriff, Kommunikation mit dem Benutzer, teilweise die Peripherie, ... 

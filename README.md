@@ -1,7 +1,7 @@
 # OpenSensorBlue #
 ** OpenSensor Solution with BluetoothLE **
 
-<b>Goto [ENGLISH VERSION](./README.md)</b>...
+<b>Goto [GERMAN VERSION...](./LIESMICH.md)</b>
 
 A large part of the software and hardware of embedded sensors is completely independent on the end product, for example the power management,
 memory access, communication with the user, partly the peripherals, ... For this reason I have developed OpenSensorBlue, an open source framework for all kinds of sensors, data loggers, small controllers, ... 

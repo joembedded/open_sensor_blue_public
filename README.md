@@ -25,7 +25,7 @@ The first 'product' is an absolutely professional marten/rodent protection with 
 Technical background: Living at the edge of a field, there is often damage caused by martens, often also to the car. I have already tried a few things and
 can say with certainty that classic tips such as toilet stones, dog hair, wire mesh, etc. are of no use.
 There are a lot of 'marten/rodent protection' devices available for sale, especially for cars, but often the technical specifications are inconclusive or the devices seem to be ineffective.
-or one of them has even ruined the battery of our camper by deep-discharge after malfunctioning. I have therefore developed the 'Marderli' for my own use.
+One of them has even ruined the battery of our camper by deep-discharge after malfunctioning. I have therefore developed the 'Marderli' for my own use.
 
 From experience I can say that the combination of high voltage and ultrasonic seems to work well:
 The animal gets a (harmless!) electric shock and learns from it to avoid places with this characteristic signal in the future.
@@ -40,7 +40,7 @@ And, of course, on the operability via BLE: Thus, the technical data (e.g. volta
 # Technical data: #
 - Designed for use with 9 - 14 volts (either from batteries or vehicle electrical system. Important: older vehicles sometimes have voltage peaks >14 volts, see HW documentation).
 - Power consumption consists of subcomponents:
-	- BLE 'only', unconnected: <20uA, 
+	- BLE 'only', unconnected: <20uA 
 	- BLE 'only', connected with APP: <50uA
 	- High-voltage generation with good insulation: approx. 32uA
 	- High-voltage generation with poor insulation: up to 500uA

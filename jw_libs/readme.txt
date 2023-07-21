@@ -1,2 +1,2 @@
-Hier sind die allgemeinen Routinen fuer den Uart/Bluetooth-Rahmen
-Spezielle Files Modem/Logger/.. sind in separate Dirs.
+Basis Portofolio systemunabhängiger Libs.
+Benötigt teilweise Routinen von JesFs ( https://github.com/joembedded/JesFs ).
